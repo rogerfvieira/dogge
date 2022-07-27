@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="https://kit.fontawesome.com/fda4223e9e.js" crossorigin="anonymous"></script>
+    <title>doggesaver</title>
+  </head>
+
+  <body>
+
+
+  <section class="main">
+
+
+  <video src="./static/videos/dog.mp4" muted loop autoplay></video>
+  
+
+
+
+    <!-- Navigation -->
+    <div class = "navbar">
+      <ul>
+      <li><a href = "/" class ="logo">DoggeSaver</a></li>
+      </ul>
+        <ul>
+        </ul>
+    </div>
+
+
+    <div class = "text">
+      <h3>Lets keep our four legged freinds safe</h3>
+      <p>Enter your food barcode down below in order to see if it is has any known dog toxins</p>
+      <form action = '/input'  method='POST'><input type="text" id="input" placeholder="" name ="fname" autofocus><br></form>
+      <p class = "search_result">{{ingredients}}</p>
+      <form action = '/input'  method='POST'><p class = "toxic">{{toxic}}</p></form>
+    </div>
+
+
+
+
+
+    <!-- footer and socials -->
+    <div class = "footer">
+      <ul class ="socials">
+        <li><a href='https://www.linkedin.com/in/rogerfloresvieira/' class = "social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href='https://github.com/rogerfvieira' class = "social-icon github"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+      <div class = "footer-bottom">
+        <p >Made for my buddy Benji 🐕 </p>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <body/>
+
+</html>
