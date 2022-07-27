@@ -67,6 +67,9 @@ In order to obtain ingredients from the provided upc code I used https://www.upc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Demo
+![](https://github.com/rogerfvieira/dogge/blob/main/demo/demo.gif)
+
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
